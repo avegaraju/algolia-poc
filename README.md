@@ -19,6 +19,18 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+## Algolia Configuration
+
+Create a `.env` file in the project root based on `.env.example` and provide your Algolia credentials. The relevant environment variables are:
+
+```
+REACT_APP_ALGOLIA_APP_ID=<your app id>
+REACT_APP_ALGOLIA_SEARCH_KEY=<your search api key>
+REACT_APP_ALGOLIA_INDEX=<your index name>
+```
+
+These values are used by the sample search component to query Algolia.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
