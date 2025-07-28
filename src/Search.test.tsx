@@ -1,11 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Search from './Search';
 
-test('renders search input', () => {
-  render(<App />);
-  const heading = screen.getByText(/Algolia POC Search/i);
-  expect(heading).toBeInTheDocument();
+it('shows search input', () => {
+  render(<Search />);
   const input = screen.getByPlaceholderText(/search/i);
   expect(input).toBeInTheDocument();
 });
